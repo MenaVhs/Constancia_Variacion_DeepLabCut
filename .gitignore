@@ -1,1 +1,18 @@
 *.mp4
+*.avi
+*.png
+*PC-GAMER
+*MENA
+
+# Iteración 0
+
+dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/*
+!dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/log/
+!dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/checkpoint
+!dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/learning_stats.csv
+!dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/log.txt
+!dlc-models/iteration-0/CVMar25-traingit add README.mdset95shuffle1/train/pose_cfg.yaml
+
+evaluation-results/iteration-0/CVMar25-trainset95shuffle1/*
+!evaluation-results/iteration-0/CVMar25-trainset95shuffle1/DLC_resnet101_CVMar25shuffle1_232600-results.csv
+!evaluation-results/iteration-0/CombinedEvaluation-results.CSV

@@ -13,8 +13,6 @@ El presente trabajo fue realizado desde entorno virtual de DEEPLABCUT
 Se crea el archivo config.yaml <br>
 ````config_path = r'C:\Users\mena_\CV-Mena-2023-03-25\config.yaml'```` <br>
 
-Se agregan: bodyparts y el skeleton.
-- crop=GUI
 
 ## Selección de datos
 Desde la GUI, ver en Docs>img>Extrac Frames.png
@@ -23,7 +21,11 @@ Desde la GUI, ver en Docs>img>Extrac Frames.png
 ## Etiquetado de frames
 Ver en el [README](https://github.com/MenaVhs/DLC-Modelo) del proyecto DLC-Modelo cómo es el etiquetado en Napari.
 
+## Creación del dataset `
+```deeplabcut.generate_training_dataset.trainingsetmanipulation.create_training_dataset(config_path, num_shuffles=1, Shuffles=None, net_type='resnet_101', augmenter_type='imgaug')```
+
 ## Entrenamiento
+```deeplabcut.pose_estimation_tensorflow.training.train_network(config_path, shuffle=1, trainingsetindex=0, gputouse=0, max_snapshots_to_keep=200000, autotune=True, displayiters=1000, saveiters=1000, maxiters=250000, allow_growth=True, keepdeconvweights=True)```
 
 
 

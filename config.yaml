@@ -6,14 +6,12 @@ multianimalproject: false
 identity:
 
     # Project path (change when moving around)
-project_path: C:/Users/mena_/Desktop/CV-Mena-2023-03-25
+project_path: C:\Users\Pc-Ryzen\Desktop\Constancia_Variacion_DeepLabCut
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
-  C:\Users\mena_\Desktop\CV-Mena-2023-03-25\videos\Grupo1R3S15.mp4:
-    crop: 0, 1920, 0, 1080
-  C:\Users\mena_\Desktop\CV-Mena-2023-03-25\videos\Grupo2R5S15.mp4:
-    crop: 0, 1920, 0, 1080
+  C:\Users\Pc-Ryzen\Desktop\Constancia_Variacion_DeepLabCut\videos\Grupo1R3S15 - Trim.mp4:
+    crop: 483, 1346, 92, 975
 bodyparts:
 - Head
 - Snout
@@ -36,9 +34,23 @@ bodyparts:
     # Fraction of video to start/stop when extracting frames for labeling/refinement
 
     # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
 start: 0
 stop: 1
-numframes2pick: 60
+numframes2pick: 5
 
     # Plotting configuration
 skeleton:
@@ -60,10 +72,10 @@ skeleton:
   - Tail2
   - TailEnd
 skeleton_color: black
-pcutoff: 0.4
-dotsize: 4
-alphavalue: 0.5
-colormap: jet
+pcutoff: 0.6
+dotsize: 12
+alphavalue: 0.7
+colormap: rainbow
 
     # Training,Evaluation and Analysis configuration
 TrainingFraction:
@@ -75,7 +87,7 @@ snapshotindex: -1
 batch_size: 8
 
     # Cropping Parameters (for analysis and outlier frame detection)
-cropping: false
+cropping: GUI
     #if cropping is true for analysis, then set the values here:
 x1: 0
 x2: 640
