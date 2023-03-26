@@ -7,7 +7,7 @@
 El presente trabajo fue realizado desde entorno virtual de DEEPLABCUT
 
 ## Creación del proyecto
-```deeplabcut.create_new_project('CV', 'Mena', ['C:\Users\mena_\OneDrive - Centro de Enseñanza LANIA\Escritorio\DLC-Videos\Grupo1R3S15.mp4', 'C:\Users\mena_\OneDrive - Centro de Enseñanza LANIA\Escritorio\DLC-Videos\Grupo2R5S15.mp4'], working_directory='C:\Users\mena_\CV-Mena-2023-03-25', copy_videos=True, multianimal=False)```
+```deeplabcut.create_new_project('CV', 'Mena', ['C:\Users\...\Grupo1R5S15.mp4', 'C:\Users\...\Grupo2R5S15.mp4'], working_directory='C:\Users\mena_\CV-Mena-2023-03-25', copy_videos=True, multianimal=False)```
 <br>
 
 Se crea el archivo config.yaml <br>
@@ -21,7 +21,7 @@ Desde la GUI, ver en Docs>img>Extrac Frames.png
 ## Etiquetado de frames
 Ver en el [README](https://github.com/MenaVhs/DLC-Modelo) del proyecto DLC-Modelo cómo es el etiquetado en Napari.
 
-## Creación del dataset `
+## Creación del dataset 
 ```deeplabcut.generate_training_dataset.trainingsetmanipulation.create_training_dataset(config_path, num_shuffles=1, Shuffles=None, net_type='resnet_101', augmenter_type='imgaug')```
 
 ## Entrenamiento
