@@ -1,0 +1,89 @@
+    # Project definitions (do not edit)
+Task: CV
+scorer: Mena
+date: Mar25
+multianimalproject: false
+identity:
+
+    # Project path (change when moving around)
+project_path: C:/Users/mena_/Desktop/CV-Mena-2023-03-25
+
+    # Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  C:\Users\mena_\Desktop\CV-Mena-2023-03-25\videos\Grupo1R3S15.mp4:
+    crop: 0, 1920, 0, 1080
+  C:\Users\mena_\Desktop\CV-Mena-2023-03-25\videos\Grupo2R5S15.mp4:
+    crop: 0, 1920, 0, 1080
+bodyparts:
+- Head
+- Snout
+- LeftEar
+- RightEar
+- Shoulder
+- Spine1
+- Spine2
+- Spine3
+- Spine4
+- TailBase
+- Tail1
+- Tail2
+- TailEnd
+- LeftPaw1
+- RightPaw1
+- LeftPaw2
+- RightPaw2
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+
+    # Fraction of video to start/stop when extracting frames for labeling/refinement
+start: 0
+stop: 1
+numframes2pick: 60
+
+    # Plotting configuration
+skeleton:
+- - Head
+  - Snout
+  - LeftEar
+  - RightEar
+- - Shoulder
+  - Spine1
+  - Spine2
+  - Spine3
+  - Spine4
+  - LeftPaw1
+  - RightPaw1
+  - LeftPaw2
+  - RightPaw2
+- - TailBase
+  - Tail1
+  - Tail2
+  - TailEnd
+skeleton_color: black
+pcutoff: 0.4
+dotsize: 4
+alphavalue: 0.5
+colormap: jet
+
+    # Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_101
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+    # Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+    #if cropping is true for analysis, then set the values here:
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+    # Refinement configuration (parameters from annotation dataset configuration also relevant in this stage)
+corner2move2:
+- 50
+- 50
+move2corner: true
