@@ -30,4 +30,4 @@ Ver en el [README](https://github.com/MenaVhs/DLC-Modelo) del proyecto DLC-Model
 En la iteración 229000; loss: 0.171%; lr: 0.02-->
 
 ## Exportar el modelo entrenado
-deeplabcut.export_model(config_path, iteration=None, shuffle=1, trainingsetindex=0,snapshotindex='all', TFGPUinference=True, overwrite=False, make_tar=True)
+```deeplabcut.export_model(config_path, iteration=None, shuffle=1, trainingsetindex=0,snapshotindex='all', TFGPUinference=True, overwrite=False, make_tar=True)```
