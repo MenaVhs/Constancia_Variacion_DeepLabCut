@@ -16,3 +16,6 @@ dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/*
 evaluation-results/iteration-0/CVMar25-trainset95shuffle1/*
 !evaluation-results/iteration-0/CVMar25-trainset95shuffle1/DLC_resnet101_CVMar25shuffle1_232600-results.csv
 !evaluation-results/iteration-0/CombinedEvaluation-results.CSV
+
+Videos/Schoenfeld/*
+Videos/Open_Fiel_6030/*
