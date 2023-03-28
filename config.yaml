@@ -10,7 +10,7 @@ project_path: C:\Users\Pc-Ryzen\Desktop\Constancia_Variacion_DeepLabCut
 
     # Annotation data set configuration (and individual video cropping parameters)
 video_sets:
-  C:\Users\Pc-Ryzen\Desktop\Constancia_Variacion_DeepLabCut\videos\Grupo1R3S15 - Trim.mp4:
+  C:\Users\Pc-Ryzen\Desktop\Constancia_Variacion_DeepLabCut\Videos\Grupo1R3S15 - Trim.mp4:
     crop: 483, 1346, 92, 975
 bodyparts:
 - Head
@@ -72,10 +72,15 @@ skeleton:
   - Tail2
   - TailEnd
 skeleton_color: black
-pcutoff: 0.6
-dotsize: 12
-alphavalue: 0.7
-colormap: rainbow
+
+# pcutoff: 0.6
+# dotsize: 12
+# alphavalue: 0.7
+# colormap: rainbow
+pcutoff: 0.4
+dotsize: 4
+alphavalue: 0.5
+colormap: jet
 
     # Training,Evaluation and Analysis configuration
 TrainingFraction:
@@ -87,7 +92,7 @@ snapshotindex: -1
 batch_size: 8
 
     # Cropping Parameters (for analysis and outlier frame detection)
-cropping: GUI
+cropping: false
     #if cropping is true for analysis, then set the values here:
 x1: 0
 x2: 640

@@ -5,7 +5,7 @@
 *MENA
 
 # Iteración 0
-
+dlc-models\iteration-0\CVMar25-trainset95shuffle1\train\log.txt
 dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/*
 !dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/log/
 !dlc-models/iteration-0/CVMar25-trainset95shuffle1/train/checkpoint
