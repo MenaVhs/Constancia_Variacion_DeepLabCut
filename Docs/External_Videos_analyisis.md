@@ -9,7 +9,7 @@ video_path =  r'C:\Users\Pc-Ryzen\Desktop\Constancia_Variacion_DeepLabCut\Videos
 
 ### Análisis de videos nuevos
 Relativos: <br>
-````deeplabcut.analyze_videos(config_path, video_path , videotype='mp4', shuffle=1, trainingsetindex=0, gputouse=0, save_as_csv=True, destfolder=None, dynamic=(True, .5, 10))````
+````deeplabcut.analyze_videos(config_path, video_path , videotype='mp4', shuffle=1, trainingsetindex=0, gputouse=0, save_as_csv=True, destfolder=None, dynamic=(True, .5, 10))````<br>
 Absolutos:<br>
 ````deeplabcut.analyze_videos(config_path, video_path , videotype='mp4', shuffle=1, trainingsetindex=0, gputouse=0, save_as_csv=True)````
 
@@ -22,4 +22,6 @@ Absolutos:<br>
 deeplabcut.utils.plotting.plot_trajectories(config_path, video_path, videotype='mp4')
 
 ### Crear videos etiquetados
-````deeplabcut.create_labeled_video(config_path,video_path, videotype='.mp4', keypoints_only=True)````
+````deeplabcut.create_labeled_video(config_path,video_path, videotype='.mp4', keypoints_only=True)````<br>
+(Información para crear videos etiquetados)[https://deeplabcut.github.io/DeepLabCut/docs/standardDeepLabCut_UserGuide.html#extract-skeleton-features]<br>
+**NEW** as of 2.2b8: You can create a video with only the “dots” plotted, i.e., in the style of Johansson, by passing keypoints_only=True:
